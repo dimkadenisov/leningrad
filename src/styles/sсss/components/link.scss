@@ -1,0 +1,10 @@
+.link {
+	font-size: 14px;
+	color: var(--white);
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

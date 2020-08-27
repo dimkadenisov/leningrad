@@ -1,0 +1,8 @@
+mixin icon-link(props = {})
+
+  - const { iconId, text, href = '#' } = props
+
+  a.icon-link(href=href)&attributes(attributes)
+    svg.icon-link__icon
+      use(href=`#${iconId}`)
+    span.link__text= text

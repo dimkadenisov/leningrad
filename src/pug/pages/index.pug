@@ -1,0 +1,11 @@
+extends ../components/page
+include ../components/hero-block
+
+block head
+  title Главная страница
+  link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=latin&subset=cyrillic" rel="stylesheet")
+
+block content
+  +header
+  main
+    +hero-block

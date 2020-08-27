@@ -1,0 +1,38 @@
+.language-selector {
+	position: relative;
+	margin-right: 18px;
+
+	&__current {
+		border: 1px solid var(--white);
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.language-list {
+		position: absolute;
+		bottom: calc(100% - 1px);
+		left: 0;
+		transform-origin: bottom center;
+		transform: scaleY(0);
+		transition: transform 0.2s ease;
+	}
+
+	&::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right: -16px;
+		width: 8px;
+		height: 8px;
+		border-right: 2px solid var(--white);
+		border-bottom: 2px solid var(--white);
+		transform: translateY(-70%) rotate(45deg);
+	}
+
+	&_opened {
+		.language-list {
+			transform: scaleY(1);
+		}
+	}
+}

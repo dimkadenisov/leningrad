@@ -1,0 +1,9 @@
+mixin main-menu(props = {})
+  include link
+
+  - const { items } = props;
+
+  ul.main-menu&attributes(attributes)
+    each item in items
+      li.main-menu__item
+        +link(item)

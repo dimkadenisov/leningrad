@@ -1,0 +1,5 @@
+mixin text-block(props = {})
+
+  - const { text, tag = 'p' } = props;
+
+  #{tag}.text-block&attributes(attributes)= text

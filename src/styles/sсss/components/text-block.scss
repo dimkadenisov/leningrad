@@ -1,0 +1,16 @@
+.text-block {
+	margin-top: 0;
+	font-size: 20px;
+
+	&_color {
+		&_white {
+			color: var(--white);
+		}
+	}
+
+	&_align {
+		&_center {
+			text-align: center;
+		}
+	}
+}

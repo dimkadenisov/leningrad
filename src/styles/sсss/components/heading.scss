@@ -1,0 +1,20 @@
+.heading {
+	display: block;
+	margin-top: 0;
+	text-align: center;
+
+	&_1 {
+		font-size: 48px;
+		font-weight: bold;
+	}
+
+	&_color {
+		&_white {
+			color: var(--white);
+		}
+
+		&_black {
+			color: var(--black);
+		}
+	}
+}

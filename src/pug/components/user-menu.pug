@@ -1,0 +1,9 @@
+mixin user-menu(props = {})
+  include icon-link
+
+  - const { items } = props;
+
+  ul.user-menu&attributes(attributes)
+    each item in items
+      li.user-menu__item
+        +icon-link(item)

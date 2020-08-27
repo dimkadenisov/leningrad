@@ -1,0 +1,6 @@
+mixin language(props = {})
+
+  - const { lang = 'ru' } = props;
+
+  .language&attributes(attributes)
+    span.language__text= lang

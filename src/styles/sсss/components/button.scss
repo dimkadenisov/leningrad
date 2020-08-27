@@ -1,0 +1,22 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 88px;
+	padding: 0 62px;
+	background-color: var(--primary);
+	border: none;
+	border-radius: 10px;
+	color: var(--white);
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.2s;
+
+	&:hover,
+	&:focus {
+		background-color: var(--action);
+	}
+}

@@ -1,0 +1,11 @@
+.user-menu {
+	display: flex;
+
+	&__item {
+		display: flex;
+
+		&:nth-last-child(n + 2) {
+			margin-right: 40px;
+		}
+	}
+}

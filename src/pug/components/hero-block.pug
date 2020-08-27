@@ -1,0 +1,16 @@
+mixin hero-block(props = {})
+  include button
+  include heading
+  include text-block
+
+  section.hero-block(style="background-image: url(assets/img/hero-image.jpg)")&attributes(attributes)
+    .container
+      article.hero-block__inner
+        +heading({
+          level: '1',
+          text: 'Инвестиционное развитие территории Ленинградской области',
+        })(class="heading_color_white")
+        +text-block({
+          text: `Интерактивная карта, наглядно демонстрирующая инвестиционные преимущества и возможности Ленинградской области`
+        })(class="text-block_color_white text-block_align_center")
+        +button({text: 'Подобрать свободную площадку'})

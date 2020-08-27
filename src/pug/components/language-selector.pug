@@ -1,0 +1,8 @@
+mixin language-selector(props = {})
+  include language
+  include language-list
+
+  .language-selector&attributes(attributes)
+    .language-selector__current
+      +language({lang: 'ru'})
+    +language-list

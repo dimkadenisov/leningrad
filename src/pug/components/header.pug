@@ -1,0 +1,41 @@
+mixin header(props = {})
+  include logo
+  include main-menu
+  include user-menu
+  include language-selector
+
+  .header&attributes(attributes)
+    .container
+      .header__inner
+        +logo
+        +main-menu({
+          items: [
+            {
+              text: 'О проекте',
+              href: '#about'
+            },
+            {
+              text: 'О регионе',
+              href: '#region'
+            },
+            {
+              text: 'Программа развития',
+              href: '#programm'
+            },
+          ]
+        })
+        +user-menu({
+          items: [
+            {
+              text: 'Избранное',
+              href: '/favorites',
+              iconId: 'heart'
+            },
+            {
+              text: 'Войти',
+              href: '/signin',
+              iconId: 'user'
+            },
+          ]
+        })
+        +language-selector

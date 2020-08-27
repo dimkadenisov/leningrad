@@ -1,0 +1,22 @@
+.header {
+	background-color: var(--gray-800);
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		height: 40px;
+	}
+
+	.logo {
+		display: flex;
+		margin-right: 40px;
+	}
+
+	.main-menu {
+		margin-right: auto;
+	}
+
+	.user-menu {
+		margin-right: 40px;
+	}
+}
