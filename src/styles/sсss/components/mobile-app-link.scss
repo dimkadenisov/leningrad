@@ -1,0 +1,15 @@
+.mobile-app-link {
+  display: inline-block;
+  color: var(--gray-400);
+  transition:  color 0.2s;
+
+  &__icon {
+    width: 135px;
+    height: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--white);
+  }
+}

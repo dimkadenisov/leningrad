@@ -1,0 +1,17 @@
+.official-sources {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid var(--gray-600a50);
+
+  &__inner {
+    display: flex;
+  }
+
+  &__item {
+    flex-basis: 33.3333%;
+
+    &:nth-last-child(n + 2) {
+      margin-right: 30px;
+    }
+  }
+}

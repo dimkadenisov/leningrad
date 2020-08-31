@@ -1,0 +1,24 @@
+mixin bottom-line(props = {})
+  include copyright
+  include download-links-list
+  include orbis
+
+  .bottom-line&attributes(attributes)
+    .container
+      .bottom-line__inner
+        +copyright
+        +download-links-list({
+          items: [
+            {
+              iconId: 'google-play-button',
+              href: '#',
+              title: 'Скачайте наше приложение в Google Play'
+            },
+            {
+              iconId: 'app-store-button',
+              href: '#',
+              title: 'Скачайте наше приложение в App Store'
+            },
+          ]
+        })
+        +orbis

@@ -1,0 +1,9 @@
+mixin download-links-list(props = {})
+  include mobile-app-link
+
+  - const { items } = props;
+
+  ul.download-links-list&attributes(attributes)
+    each item in items
+      li.download-links-list__item
+        +mobile-app-link(item)

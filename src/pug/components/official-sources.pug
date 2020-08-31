@@ -1,0 +1,16 @@
+mixin official-sources(props = {})
+  include icon-link
+
+  - const { items } = props;
+
+  .official-sources&attributes(attributes)
+    .container
+      ul.official-sources__inner
+        each item in items
+          - const {iconId, text, href, attrs } = item
+          li.official-sources__item
+            +icon-link({
+              iconId: iconId,
+              text: text,
+              href: href
+            })&attributes(attrs)

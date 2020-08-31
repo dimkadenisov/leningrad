@@ -1,0 +1,7 @@
+mixin mobile-app-link(props = {})
+
+  - const { href = '#', iconId, title = "Скачайте наше приложение" } = props;
+
+  a(href=href title=title).mobile-app-link&attributes(attributes)
+    svg.mobile-app-link__icon
+      use(href=`#${iconId}`)

@@ -1,0 +1,14 @@
+.bottom-line {
+  padding-top: 55px;
+  padding-bottom: 60px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    max-width: 390px;
+  }
+}

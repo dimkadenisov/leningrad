@@ -1,4 +1,31 @@
 mixin footer(props = {})
+  include official-sources
+  include bottom-line
 
   .footer&attributes(attributes)
-    p footer
+    +official-sources({
+      items: [
+        {
+          iconId: 'emblem',
+          text: 'Официальный сайт Администрации Ленинградской области',
+          attrs: {
+            class: 'icon-link_size_big'
+          }
+        },
+        {
+          iconId: 'emblem',
+          text: 'Комитет экономического развития и инвестиционной деятельности Ленинградской области',
+          attrs: {
+            class: 'icon-link_size_big'
+          }
+        },
+        {
+          iconId: 'emblem-mono',
+          text: 'Инвестиционный портал Ленинградской  области',
+          attrs: {
+            class: 'icon-link_size_big'
+          }
+        },
+      ]
+    })
+    +bottom-line

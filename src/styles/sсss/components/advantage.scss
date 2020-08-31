@@ -1,0 +1,15 @@
+.advantage {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 74px;
+    height: 74px;
+    margin-right: 34px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+    color: var(--primary);
+  }
+}

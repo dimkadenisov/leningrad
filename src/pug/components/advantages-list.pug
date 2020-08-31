@@ -1,0 +1,9 @@
+mixin advantages-list(props = {})
+  include advantage
+
+  - const { items } = props;
+
+  ul.advantages-list&attributes(attributes)
+    each item in items
+      li.advantages-list__item
+        +advantage(item)

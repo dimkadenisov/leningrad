@@ -2,7 +2,12 @@
 @import 'utilities/variables.scss';
 @import 'utilities/reset.scss';
 
+@import 'components/advantage.scss';
+@import 'components/advantages-block.scss';
+@import 'components/bottom-line.scss';
 @import 'components/button.scss';
+@import 'components/copyright.scss';
+@import 'components/download-links-list.scss';
 @import 'components/footer.scss';
 @import 'components/header.scss';
 @import 'components/heading.scss';
@@ -13,6 +18,9 @@
 @import 'components/language-selector.scss';
 @import 'components/link.scss';
 @import 'components/main-menu.scss';
+@import 'components/mobile-app-link.scss';
+@import 'components/official-sources.scss';
+@import 'components/orbis.scss';
 @import 'components/text-block.scss';
 @import 'components/user-menu.scss';
 

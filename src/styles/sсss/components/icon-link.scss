@@ -2,10 +2,11 @@
 	display: inline-flex;
 	align-items: center;
 	color: var(--white);
-	font-size: 14px;
+  font-size: 14px;
 	text-decoration: none;
 
 	&__icon {
+    flex-shrink: 0;
 		width: 18px;
 		height: 18px;
 		margin-right: 6px;
@@ -14,5 +15,16 @@
 	&:hover,
 	&:focus {
 		text-decoration: underline;
-	}
+  }
+
+  &_size_big {
+    font-size: 16px;
+    line-height: 1.5;
+
+    .icon-link__icon {
+      width: 80px;
+      height: 80px;
+      margin-right: 28px;
+    }
+  }
 }

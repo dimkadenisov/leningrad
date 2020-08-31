@@ -1,6 +1,11 @@
 mixin heading(props = {})
 
   - const { level, tag, text } = props;
-  - const serealizedTag = tag ? tag : `h${level}`
+  - const serealizedTag = tag ? tag : `h${level}`;
+  - const textChunks =  text.split('\n');
 
-  #{serealizedTag}(class=`heading heading_${level}`)&attributes(attributes)= text
+  #{serealizedTag}(class=`heading heading_${level}`)&attributes(attributes)
+    each chunk, index in textChunks
+        span= chunk
+        if textChunks.length > index + 1
+          br

@@ -1,0 +1,35 @@
+mixin advantages-block(props = {})
+  include heading
+  include advantages-list
+
+  section.advantages-block&attributes(attributes)
+    .container
+      article.advantages-block__inner
+        +heading({
+          level: 2,
+          text: 'Преимущества инвестирования и развития \n бизнеса в Ленинградской области'
+        })
+        +advantages-list({
+          items: [
+            {
+              iconId: 'hands',
+              text: 'Эффективные меры поддержки инвесторов'
+            },
+            {
+              iconId: 'car',
+              text: 'Транспортная доступность'
+            },
+            {
+              iconId: 'pin',
+              text: 'Выгодное географическое положение'
+            },
+            {
+              iconId: 'people',
+              text: 'Доступ к квалифицированным кадрам'
+            },
+            {
+              iconId: 'russia',
+              text: 'Второй по величине рынок в России'
+            },
+          ]
+        })

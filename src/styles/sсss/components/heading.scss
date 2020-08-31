@@ -4,9 +4,16 @@
 	text-align: center;
 
 	&_1 {
-		font-size: 48px;
-		font-weight: bold;
-	}
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.13;
+  }
+
+  &_2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.33;
+  }
 
 	&_color {
 		&_white {
