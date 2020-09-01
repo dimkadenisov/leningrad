@@ -1,0 +1,10 @@
+.icons-list {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		&:first-child {
+			border-right: 1px solid var(--gray-500);
+		}
+	}
+}

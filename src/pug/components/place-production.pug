@@ -1,0 +1,12 @@
+mixin place-production(props = {})
+  include button
+  include heading
+
+  section.place-production&attributes(attributes)
+    .container
+      article.place-production__inner
+        +text-block({
+          tag: 'span',
+          text: 'На протяжении многих лет Ленинградская область является одним из лидеров по темпам экономического развития в Северо-Западном федеральном округе'
+        })(class="text-block_color_white text-block_align_center text-block_size_extra-big")
+        +button({tag: 'a', text: 'Разместить производство'})(href="#")

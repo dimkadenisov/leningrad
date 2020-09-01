@@ -1,0 +1,12 @@
+.card-block {
+	padding-bottom: 195px;
+	background-color: var(--gray-800);
+
+	&__inner {
+		display: flex;
+		height: 640px;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}

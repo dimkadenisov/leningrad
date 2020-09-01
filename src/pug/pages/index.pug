@@ -1,6 +1,10 @@
 extends ../components/page
 include ../components/hero-block
 include ../components/advantages-block
+include ../components/about-region
+include ../components/icons-block
+include ../components/card-block
+include ../components/place-production
 
 block head
   title Главная страница
@@ -10,4 +14,8 @@ block content
   +header
   main
     +hero-block
+    +place-production
+    +icons-block
+    +card-block
+    +about-region
     +advantages-block

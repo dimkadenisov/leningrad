@@ -1,0 +1,9 @@
+mixin icons-list(props = {})
+  include icon-advantage
+
+  - const { items } = props;
+
+  ul.icons-list&attributes(attributes)
+    each item in items
+      li.icons-list__item
+        +icon-advantage(item)

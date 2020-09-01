@@ -1,0 +1,28 @@
+.icon-advantage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 10px;
+
+	&__icon {
+		width: 77px;
+		height: 77px;
+		margin-bottom: 30px;
+		color: var(--primary);
+	}
+
+	&__number {
+		margin-bottom: 10px;
+		color: var(--primary);
+		font-size: 80px;
+		line-height: 0.75;
+		text-align: center;
+	}
+
+	&__tagline {
+		color: var(--white);
+		font-size: 18px;
+		line-height: 1.22;
+		text-align: center;
+	}
+}

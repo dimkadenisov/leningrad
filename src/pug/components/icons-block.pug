@@ -1,0 +1,35 @@
+mixin icons-block(props = {})
+  include icons-list
+
+  section.icons-block&attributes(attributes)
+    .container
+      article.icons-block__inner
+        +icons-list({
+          items: [
+            {
+              iconId: 'factory',
+              number: '255',
+              tagline: 'Свободных инвестиционных площадок',
+            },
+            {
+              iconId: 'factory-2',
+              number: '27',
+              tagline: 'Индустриальные парки',
+            },
+            {
+              iconId: 'rubl',
+              number: '235',
+              tagline: 'Инвестиционных проектов',
+            },
+            {
+              iconId: 'rocket',
+              number: '3',
+              tagline: 'Моногорода. ТОСЭР Пикалево',
+            },
+            {
+              iconId: 'hospital',
+              number: '3 507',
+              tagline: 'Объекты программ развития',
+            },
+          ]
+        })

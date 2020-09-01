@@ -1,0 +1,14 @@
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 830px;
+  margin: 0 auto 36px;
+
+  &__item {
+    --margin-right: 65px;
+    flex-basis: calc(50% - var(--margin-right));
+    flex-shrink: 0;
+    margin-right: var(--margin-right);
+    margin-bottom: 44px;
+  }
+}

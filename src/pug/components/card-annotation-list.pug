@@ -1,0 +1,7 @@
+mixin card-annotation-list(props = {})
+
+  - const { items } = props;
+
+  ul.card-annotation-list&attributes(attributes)
+    each item in items
+      li.card-annotation-list__item= item

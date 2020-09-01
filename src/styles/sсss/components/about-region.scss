@@ -1,0 +1,14 @@
+.about-region {
+	padding-top: 183px;
+	padding-bottom: 100px;
+	background-color: var(--gray-100);
+
+	&__inner {
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+
+	.heading {
+		margin-bottom: 40px;
+	}
+}

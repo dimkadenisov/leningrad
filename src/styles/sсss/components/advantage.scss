@@ -1,6 +1,5 @@
 .advantage {
   display: flex;
-  align-items: center;
 
   &__icon {
     flex-shrink: 0;
@@ -11,5 +10,9 @@
     background-color: var(--white);
     border-radius: 50%;
     color: var(--primary);
+  }
+
+  &__text {
+    padding-top: 12px;
   }
 }

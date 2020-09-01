@@ -1,19 +1,26 @@
 .heading {
 	display: block;
 	margin-top: 0;
+	font-weight: bold;
 	text-align: center;
 
-	&_1 {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.13;
-  }
+	&_level {
+		&_1 {
+			font-size: 48px;
+			line-height: 1.13;
+		}
 
-  &_2 {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1.33;
-  }
+		&_2 {
+			font-size: 36px;
+			line-height: 1.33;
+		}
+
+		&_3 {
+			font-size: 18px;
+			line-height: 1.33;
+			text-align: left;
+		}
+	}
 
 	&_color {
 		&_white {

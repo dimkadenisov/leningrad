@@ -1,0 +1,9 @@
+mixin icon-advantage(props = {})
+
+  - const { iconId, number, tagline } = props;
+
+  .icon-advantage&attributes(attributes)
+    svg.icon-advantage__icon
+      use(href=`#${iconId}`)
+    span.icon-advantage__number= number
+    span.icon-advantage__tagline= tagline

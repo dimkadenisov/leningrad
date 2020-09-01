@@ -2,17 +2,25 @@
 @import 'utilities/variables.scss';
 @import 'utilities/reset.scss';
 
+@import 'components/about-region.scss';
 @import 'components/advantage.scss';
 @import 'components/advantages-block.scss';
+@import 'components/advantages-list.scss';
 @import 'components/bottom-line.scss';
 @import 'components/button.scss';
+@import 'components/card-annotation.scss';
+@import 'components/card-annotation-list.scss';
+@import 'components/card-block.scss';
 @import 'components/copyright.scss';
 @import 'components/download-links-list.scss';
 @import 'components/footer.scss';
 @import 'components/header.scss';
 @import 'components/heading.scss';
 @import 'components/hero-block.scss';
+@import 'components/icon-advantage.scss';
 @import 'components/icon-link.scss';
+@import 'components/icons-block.scss';
+@import 'components/icons-list.scss';
 @import 'components/language.scss';
 @import 'components/language-list.scss';
 @import 'components/language-selector.scss';
@@ -21,6 +29,7 @@
 @import 'components/mobile-app-link.scss';
 @import 'components/official-sources.scss';
 @import 'components/orbis.scss';
+@import 'components/place-production.scss';
 @import 'components/text-block.scss';
 @import 'components/user-menu.scss';
 

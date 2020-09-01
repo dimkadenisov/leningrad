@@ -1,0 +1,17 @@
+.place-production {
+	padding-top: 140px;
+	background-color: var(--gray-800);
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 75px 130px 55px;
+		background-color: var(--primary-dark);
+		border-radius: 20px;
+
+		.text-block {
+			margin-bottom: 25px;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+mixin card-annotation(props = {})
+  include button
+  include card-annotation-list
+
+  .card-annotation&attributes(attributes)
+    +heading({tag: 'span', level: '3', text: 'Подробные характеристики площадок и инфраструктура на карте'})(class="heading_color_white")
+    +card-annotation-list({
+      items: [
+        'Схемы инвестиционных площадок',
+        'Оценка существующей инфраструктуры',
+        'Планы развития инфраструктуры',
+        'Реализуемые инвестиционные проекты',
+        'Категории земель, кадастровая карта, спутниковые снимки',
+      ]
+    })
+    +button({tag: 'a', text: 'Перейти на карту'})(class="button_size_small" href="#")

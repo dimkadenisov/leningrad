@@ -1,6 +1,7 @@
 mixin advantages-block(props = {})
   include heading
   include advantages-list
+  include button
 
   section.advantages-block&attributes(attributes)
     .container
@@ -33,3 +34,5 @@ mixin advantages-block(props = {})
             },
           ]
         })
+      .d_flex
+        +button({tag: 'a', text: 'Узнать подробнее'})(href="#")

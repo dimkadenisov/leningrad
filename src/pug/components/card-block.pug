@@ -1,0 +1,7 @@
+mixin card-block(props = {})
+  include card-annotation
+
+  section.card-block&attributes(attributes)
+    .container
+      article.card-block__inner(style="background-image: url(assets/img/card.jpg)")
+        +card-annotation
