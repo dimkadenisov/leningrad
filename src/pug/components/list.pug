@@ -1,0 +1,14 @@
+mixin list(props = {})
+
+  - const { items } = props;
+  - const isItemObject = typeof items[0] === 'object';
+
+    ul.list&attributes(attributes)
+      each item in items
+        if isItemObject
+          li.list-item
+            svg.list-item__icon
+              use(href=`#${item.iconId}`)
+            span !{item.text}
+        else
+          li.list-item.list-item_simple= item

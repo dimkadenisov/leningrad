@@ -5,6 +5,8 @@ include ../components/about-region
 include ../components/icons-block
 include ../components/card-block
 include ../components/place-production
+include ../components/links-swiper
+include ../components/about-project
 
 block head
   title Главная страница
@@ -14,6 +16,35 @@ block content
   +header
   main
     +hero-block
+    +links-swiper({
+      items: [
+        {
+          iconId: 'swiper-hands',
+          text: 'Навигатор мер поддержки'
+        },
+        {
+          iconId: 'swiper-rubl',
+          text: 'Льготы для инвесторов'
+        },
+        {
+          iconId: 'swiper-factory',
+          text: 'Льготы для индустриальных парков'
+        },
+        {
+          iconId: 'swiper-factories',
+          text: 'Льготы для резидентов ТОСЭР'
+        },
+        {
+          iconId: 'swiper-pins',
+          text: 'Земельные участки в аренду'
+        },
+        {
+          iconId: 'swiper-money',
+          text: 'Субсидии в АПК'
+        },
+      ]
+    })
+    +about-project
     +place-production
     +icons-block
     +card-block

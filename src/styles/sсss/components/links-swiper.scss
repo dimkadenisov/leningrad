@@ -1,0 +1,32 @@
+.links-swiper {
+	padding-top: 130px;
+	background-color: var(--gray-800);
+
+	&__inner {
+		&.swiper-container {
+			margin: 0 40px;
+		}
+	}
+
+	.swiper-wrapper {
+		align-items: flex-end;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 55%;
+		color: var(--white);
+
+		&::after {
+			font-size: 20px;
+		}
+	}
+
+	.swiper-button-prev {
+		left: 20px;
+	}
+
+	.swiper-button-next {
+		right: 20px;
+	}
+}

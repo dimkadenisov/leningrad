@@ -7,4 +7,16 @@
 	&:focus {
 		text-decoration: underline;
 	}
+
+	&_color {
+		&_primary {
+			color: var(--primary);
+		}
+	}
+
+	&_size {
+		&_big {
+			font-size: 20px;
+		}
+	}
 }

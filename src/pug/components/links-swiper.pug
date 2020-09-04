@@ -1,0 +1,14 @@
+mixin links-swiper(props = {})
+  include links-swiper-slide
+
+  - const { items } = props;
+
+  section.links-swiper&attributes(attributes)
+    .container
+      article.links-swiper__inner.swiper-container
+        .swiper-wrapper
+          each item in items
+            .swiper-slide
+              +links-swiper-slide(item)
+      .swiper-button-prev
+      .swiper-button-next

@@ -1,0 +1,11 @@
+mixin links-swiper-slide(props = {})
+
+  - const { iconId, text, href = "#" } = props;
+
+    a(href=href).links-swiper-slide&attributes(attributes)
+      .links-swiper-slide__inner
+        svg.links-swiper-slide__icon
+          use(href=`#${iconId}`)
+        .links-swiper-slide__text= text
+        svg.links-swiper-slide__link-icon
+          use(href="#link-icon")

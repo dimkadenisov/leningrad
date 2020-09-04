@@ -1,0 +1,18 @@
+.about-project {
+	padding-top: 184px;
+	background-color: var(--gray-800);
+
+	.heading_level_2 {
+		margin-bottom: 40px;
+
+		& + .text-block {
+			max-width: 1080px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	.link {
+		margin: 20px auto 0;
+	}
+}
