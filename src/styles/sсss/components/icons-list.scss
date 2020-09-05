@@ -8,3 +8,18 @@
 		}
 	}
 }
+
+@media (max-width: 999px) {
+	.icons-list {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__item {
+			flex-basis: 33.3333%;
+
+			&:first-child {
+				border-right: none;
+			}
+		}
+	}
+}

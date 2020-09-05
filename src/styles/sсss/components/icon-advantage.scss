@@ -26,3 +26,11 @@
 		text-align: center;
 	}
 }
+
+@media (max-width: 1329px) {
+	.icon-advantage {
+		&__number {
+			font-size: 50px;
+		}
+	}
+}

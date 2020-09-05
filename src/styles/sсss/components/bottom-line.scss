@@ -1,14 +1,27 @@
 .bottom-line {
-  padding-top: 55px;
-  padding-bottom: 60px;
+	padding-top: 55px;
+	padding-bottom: 60px;
 
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-  .copyright {
-    max-width: 390px;
-  }
+	.copyright {
+		max-width: 390px;
+	}
+}
+
+@media (max-width: 999px) {
+	.bottom-line {
+		&__inner {
+			flex-wrap: wrap;
+		}
+
+		.copyright {
+			max-width: 100%;
+			margin-bottom: 15px;
+		}
+	}
 }

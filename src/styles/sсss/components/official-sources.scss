@@ -11,7 +11,20 @@
 		flex-basis: 33.3333%;
 
 		&:nth-last-child(n + 2) {
-			margin-right: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+@media (max-width: 999px) {
+	.official-sources {
+		&__inner {
+			flex-direction: column;
+		}
+
+		&__item {
+			flex-basis: 100%;
+			margin-bottom: 15px;
 		}
 	}
 }

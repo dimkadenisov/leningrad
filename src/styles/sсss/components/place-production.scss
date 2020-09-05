@@ -15,3 +15,11 @@
 		}
 	}
 }
+
+@media (max-width: 999px) {
+	.place-production {
+		&__inner {
+			padding: 45px 40px 35px;
+		}
+	}
+}
