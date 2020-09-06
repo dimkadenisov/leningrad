@@ -24,18 +24,21 @@
 	}
 
 	&__icon {
+		flex-shrink: 0;
 		width: 60px;
 		height: 60px;
 		margin-bottom: 34px;
 	}
 
 	&__text {
+		flex-shrink: 0;
 		font-size: 20px;
 		line-height: 1.7;
 		text-align: center;
 	}
 
 	&__link-icon {
+		flex-shrink: 0;
 		align-self: end;
 		width: 21px;
 		height: 21px;
@@ -49,5 +52,21 @@
 		padding-top: calc(var(--mt) + var(--pt));
 		background-color: var(--primary);
 		color: var(--white);
+	}
+}
+
+@media (max-width: 999px) {
+	.links-swiper-slide {
+		&__inner {
+			padding: 45px 15px 20px;
+		}
+
+		&__icon {
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			font-size: 18px;
+		}
 	}
 }

@@ -7,3 +7,10 @@
 	background-color: var(--gray-900-a88);
 	border-radius: 10px;
 }
+
+@media (max-width: 999px) {
+	.card-annotation {
+		width: 300px;
+		margin: 20px 40px 20px auto;
+	}
+}
