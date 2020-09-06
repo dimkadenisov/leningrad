@@ -27,3 +27,13 @@
 		}
 	}
 }
+
+@media (max-width: 540px) {
+	.text-block {
+		&_size {
+			&_extra-big {
+				font-size: 18px;
+			}
+		}
+	}
+}

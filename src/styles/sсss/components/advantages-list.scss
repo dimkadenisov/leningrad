@@ -15,7 +15,9 @@
 @media (max-width: 999px) {
 	.advantages-list {
 		&__item {
-			padding-right: 30px;
+			flex-basis: 100%;
+			margin-bottom: 30px;
+			padding-right: 0;
 		}
 	}
 }

@@ -23,3 +23,19 @@
 		}
 	}
 }
+
+@media (max-width: 540px) {
+	.icons-list {
+		&__item {
+			flex-basis: 50%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.icons-list {
+		&__item {
+			flex-basis: 100%;
+		}
+	}
+}

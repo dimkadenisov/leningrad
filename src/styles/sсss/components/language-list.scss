@@ -1,8 +1,6 @@
 .language-list {
 	position: relative;
-	background-color: var(--gray-800);
-
-	&:hover {
-		background-color: rgba(var(--gray-100), 0.5);
-	}
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	overflow: hidden;
 }

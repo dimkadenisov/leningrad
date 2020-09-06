@@ -7,7 +7,7 @@ const linksSwiper = new Swiper('.links-swiper__inner', {
 	},
 	breakpoints: {
 		// when window width is >= 320px
-		500: {
+		541: {
 			slidesPerView: 2,
 		},
 		700: {

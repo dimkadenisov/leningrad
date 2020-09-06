@@ -33,3 +33,28 @@
 		}
 	}
 }
+
+@media (max-width: 999px) {
+	.button {
+		padding: 0 30px;
+
+		&_size {
+			&_small {
+				padding: 0 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 690px) {
+	.button {
+		min-height: 70px;
+		padding: 0 15px;
+
+		&_size {
+			&_small {
+				padding: 0 10px;
+			}
+		}
+	}
+}

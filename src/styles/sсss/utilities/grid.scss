@@ -22,3 +22,9 @@
 		max-width: 540px;
 	}
 }
+
+@media (max-width: 540px) {
+	.container {
+		padding: 0 15px;
+	}
+}

@@ -1,6 +1,10 @@
 mixin link(props = {})
 
-  - const { text, href = '#' } = props;
+  - const { text, href = '#', tag = "a" } = props;
 
-  a(href=href).link&attributes(attributes)
-    span.link__text= text
+  if tag === 'a'
+    #{tag}(href=href).link&attributes(attributes)
+      span.link__text= text
+  else
+    #{tag}.link&attributes(attributes)
+      span.link__text= text

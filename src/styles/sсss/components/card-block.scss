@@ -13,8 +13,19 @@
 
 @media (max-width: 999px) {
 	.card-block {
+		padding-bottom: 80px;
+
 		&__inner {
 			height: 500px;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.card-block {
+		.card-annotation {
+			margin-right: auto;
+			margin-left: auto;
 		}
 	}
 }

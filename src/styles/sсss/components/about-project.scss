@@ -3,8 +3,9 @@
 	background-color: var(--gray-800);
 	overflow: auto;
 
-	.container {
+	&__inner {
 		max-width: 1080px;
+		margin: 0 auto;
 	}
 
 	.heading_level_2 {
@@ -23,5 +24,11 @@
 	.text-block,
 	.list {
 		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 999px) {
+	.about-project {
+		padding-top: 110px;
 	}
 }

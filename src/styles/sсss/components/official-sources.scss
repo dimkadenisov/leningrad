@@ -16,6 +16,14 @@
 	}
 }
 
+@media (max-width: 1329px) and (min-width: 1000px) {
+	.official-sources {
+		.icon-link {
+			align-items: flex-start;
+		}
+	}
+}
+
 @media (max-width: 999px) {
 	.official-sources {
 		&__inner {

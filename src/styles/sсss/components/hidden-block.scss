@@ -1,0 +1,19 @@
+.hidden-block {
+	display: none;
+
+	&_opened {
+		display: block;
+	}
+}
+
+.hide-button {
+	&::before {
+		content: 'Развернуть';
+	}
+
+	&_opened {
+		&::before {
+			content: 'Свернуть';
+		}
+	}
+}

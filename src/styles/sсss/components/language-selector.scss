@@ -1,11 +1,26 @@
 .language-selector {
+	display: inline-block;
 	position: relative;
 	margin-right: 18px;
 
 	&__current {
 		border: 1px solid var(--white);
-		// border-radius: 5px;
+		border-radius: 5px;
 		overflow: hidden;
+	}
+
+	&::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right: -16px;
+		width: 8px;
+		height: 8px;
+		border-right: 2px solid var(--white);
+		border-bottom: 2px solid var(--white);
+		transform: translateY(-70%) rotate(45deg);
+		cursor: pointer;
 	}
 
 	.language-list {
@@ -24,6 +39,8 @@
 	&_opened {
 		.language-selector__current {
 			border-bottom-color: transparent;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
 		}
 
 		.language-list {

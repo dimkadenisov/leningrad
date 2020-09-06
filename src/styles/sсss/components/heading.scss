@@ -32,3 +32,31 @@
 		}
 	}
 }
+
+@media (max-width: 999px) {
+	.heading {
+		&_level {
+			&_1 {
+				font-size: 38px;
+			}
+
+			&_2 {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.heading {
+		&_level {
+			&_1 {
+				font-size: 30px;
+			}
+
+			&_2 {
+				font-size: 24px;
+			}
+		}
+	}
+}
