@@ -1,0 +1,19 @@
+mixin contact(props = {})
+  include icon-link
+  include text-block
+
+  - const { forWhom, adress, phone, mail } = props;
+
+  .contact&attributes(attributes)
+    +text-block({text: forWhom})(class="text-block_color_white contact__for")
+    +text-block({text: adress})(class="text-block_color_white contact__adress")
+    +icon-link({
+      iconId: 'phone',
+      href: phone.href,
+      text: phone.text,
+    })(class="icon-link_color_white contact__link")
+    +icon-link({
+      iconId: 'mail',
+      href: mail.href,
+      text: mail.text,
+    })(class="icon-link_color_white contact__link")

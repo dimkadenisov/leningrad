@@ -1,0 +1,16 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+
+	&__for {
+		margin-bottom: 30px;
+	}
+
+	&__adress {
+		margin-bottom: 15px;
+	}
+
+	&__link {
+		margin-bottom: 15px;
+	}
+}

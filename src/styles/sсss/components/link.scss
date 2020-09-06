@@ -11,6 +11,15 @@
 	&_color {
 		&_primary {
 			color: var(--primary);
+
+			&:hover,
+			&:focus {
+				color: var(--hover);
+			}
+
+			&:active {
+				color: var(--active);
+			}
 		}
 	}
 
@@ -18,5 +27,9 @@
 		&_big {
 			font-size: 20px;
 		}
+	}
+
+	&_underlined {
+		text-decoration: underline;
 	}
 }

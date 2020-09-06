@@ -1,0 +1,33 @@
+mixin contacts-block(props = {})
+  include contact
+
+  article.contacts-block&attributes(attributes)
+    +heading({
+      level: 3,
+      text: 'Контакты'
+    })(class="heading_color_white contacts-block__heading")
+    .contacts-block__inner
+      +contact({
+        forWhom: 'Для инвесторов:',
+        adress: 'Государственное казенное учреждение <br/> «Агенство экономического развития Ленинградской области» <br/> 195112, Санкт-Петербург <br/> Малоохотский пр., 64 Б, оф. 402',
+        phone: {
+          href: 'tel:78126440123',
+          text: '644-01-23'
+        },
+        mail: {
+          href: 'mailto:invest@lenreg.ru',
+          text: 'invest@lenreg.ru',
+        }
+      })
+      +contact({
+        forWhom: 'По вопросам работы ИРИС:',
+        adress: 'Комитет экономического развития и инвестиционной <br/> деятельности Ленинградской области <br/> Корякин Сергей Николаевич - референт заместителя <br/> Председателя Правительства Ленинградской области',
+        phone: {
+          href: 'tel:78126114982',
+          text: '611-49-82'
+        },
+        mail: {
+          href: 'mailto:sn_korjakin@lenreg.ru',
+          text: 'sn_korjakin@lenreg.ru',
+        }
+      })

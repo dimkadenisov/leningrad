@@ -4,33 +4,28 @@
 
 	&__current {
 		border: 1px solid var(--white);
-		border-radius: 5px;
+		// border-radius: 5px;
 		overflow: hidden;
 	}
 
 	.language-list {
 		position: absolute;
-		bottom: calc(100% - 1px);
+		top: calc(100% - 1px);
 		left: 0;
-		transform-origin: bottom center;
+		transform-origin: top center;
 		transform: scaleY(0);
 		transition: transform 0.2s ease;
-	}
 
-	&::after {
-		content: '';
-		display: inline-block;
-		position: absolute;
-		top: 50%;
-		right: -16px;
-		width: 8px;
-		height: 8px;
-		border-right: 2px solid var(--white);
-		border-bottom: 2px solid var(--white);
-		transform: translateY(-70%) rotate(45deg);
+		border-color: var(--white);
+		border-width: 0 1px 1px 1px;
+		border-style: solid;
 	}
 
 	&_opened {
+		.language-selector__current {
+			border-bottom-color: transparent;
+		}
+
 		.language-list {
 			transform: scaleY(1);
 		}

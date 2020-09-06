@@ -1,0 +1,10 @@
+.contacts-block {
+	&__heading {
+		margin-bottom: 30px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+}

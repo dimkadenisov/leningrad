@@ -1,30 +1,45 @@
 .icon-link {
 	display: inline-flex;
 	align-items: center;
-	color: var(--white);
-  font-size: 14px;
+	color: var(--black);
+	font-size: 14px;
 	text-decoration: none;
 
 	&__icon {
-    flex-shrink: 0;
+		flex-shrink: 0;
 		width: 18px;
 		height: 18px;
 		margin-right: 6px;
+		color: var(--primary);
 	}
 
 	&:hover,
 	&:focus {
 		text-decoration: underline;
-  }
+	}
 
-  &_size_big {
-    font-size: 16px;
-    line-height: 1.5;
+	&_color {
+		&_white {
+			color: var(--white);
+		}
 
-    .icon-link__icon {
-      width: 80px;
-      height: 80px;
-      margin-right: 28px;
-    }
-  }
+		&_total-white {
+			color: var(--white);
+
+			.icon-link__icon {
+				color: var(--white);
+			}
+		}
+	}
+
+	&_size_big {
+		font-size: 16px;
+		line-height: 1.5;
+
+		.icon-link__icon {
+			width: 80px;
+			height: 80px;
+			margin-right: 28px;
+		}
+	}
 }
