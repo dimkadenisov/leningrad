@@ -42,7 +42,6 @@ document.querySelectorAll('.language').forEach(language => {
 const linksSwiper = new Swiper('.links-swiper__inner', {
   slidesPerView: 1,
   spaceBetween: 18,
-  // loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
