@@ -10,17 +10,16 @@ document.body.addEventListener('click', e => {
 });
 "use strict";
 
-const handleSelectMouseEnter = function (event) {
+const handleLanguageSelectorOpen = function (event) {
   this.classList.add('language-selector_opened');
 };
 
-const handleSelectMouseLeave = function (event) {
+const handleLanguageSelectorCLose = function (event) {
   this.classList.remove('language-selector_opened');
 };
 
 document.querySelectorAll('.language-selector').forEach(selector => {
-  selector.addEventListener('mouseenter', handleSelectMouseEnter);
-  selector.addEventListener('mouseleave', handleSelectMouseLeave);
+  selector.addEventListener('click', handleLanguageSelectorOpen, handleLanguageSelectorCLose);
 });
 document.querySelectorAll('.language').forEach(language => {
   language.addEventListener('click', function (event) {
@@ -31,18 +30,19 @@ document.querySelectorAll('.language').forEach(language => {
       oldLanguage.parentNode.appendChild(language);
       appendTarget.appendChild(oldLanguage);
       selector.classList.remove('language-selector_opened');
-      selector.removeEventListener('mouseenter', handleSelectMouseEnter);
+      selector.removeEventListener('click', handleLanguageSelectorOpen);
       setTimeout(() => {
-        selector.addEventListener('mouseenter', handleSelectMouseEnter);
+        selector.addEventListener('click', handleLanguageSelectorOpen);
       }, 200);
     }
   });
 });
 "use strict";
 
-const linksSwiper = new Swiper('.links-swiper__inner', {
+const linksSwiper = document.querySelector('.links-swiper__inner') && new Swiper('.links-swiper__inner', {
   slidesPerView: 1,
   spaceBetween: 18,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
