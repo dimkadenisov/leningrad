@@ -1,0 +1,37 @@
+.development-programs-group {
+	max-width: 933px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 55px 71px;
+	border-radius: 20px;
+	background-color: var(--white);
+
+	&__heading {
+		display: block;
+		margin-bottom: 35px;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 34px;
+	}
+
+	&:nth-last-child(n + 2) {
+		margin-bottom: 18px;
+	}
+}
+
+@media (max-width: 699px) {
+	.development-programs-group {
+		padding: 25px 40px;
+	}
+}
+
+@media (max-width: 540px) {
+	.development-programs-group {
+		padding: 20px;
+
+		&__heading {
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+	}
+}

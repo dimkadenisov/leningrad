@@ -1,0 +1,11 @@
+mixin development-programs-list(props = {})
+  include text-block
+  include icon-button
+
+  - const { items } = props;
+
+  .development-programs-list&attributes(attributes)
+    each item in items
+      .development-programs-list__item
+        +text-block({text: item.text})
+        +icon-button({iconId: item.iconId, tag: 'a'})(href="#")

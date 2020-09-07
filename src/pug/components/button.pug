@@ -1,6 +1,9 @@
 mixin button(props = {})
 
-  - const { tag = 'button', text = 'Button' } = props;
+  - const { tag = 'button', text = 'Button', iconId } = props;
 
   #{tag}.button&attributes(attributes)
+    if iconId
+      svg.button__icon
+        use(href=`#${iconId}`)
     span.button__text= text

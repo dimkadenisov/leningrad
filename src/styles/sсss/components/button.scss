@@ -15,6 +15,13 @@
 	cursor: pointer;
 	transition: background-color 0.2s;
 
+	&__icon {
+		flex-shrink: 0;
+		width: 25px;
+		height: 25px;
+		margin-right: 15px;
+	}
+
 	&:hover,
 	&:focus {
 		background-color: var(--hover);

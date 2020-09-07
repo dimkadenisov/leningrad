@@ -1,0 +1,7 @@
+mixin icon-button(props = {})
+
+  - const { tag = 'button', iconId } = props;
+
+  #{tag}.icon-button&attributes(attributes)
+    svg.icon-button__icon
+      use(href=`#${iconId}`)

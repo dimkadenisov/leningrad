@@ -1,0 +1,8 @@
+mixin development-programs-group(props = {})
+  include development-programs-list
+
+  - const { heading, items } = props;
+
+  article.development-programs-group&attributes(attributes)
+    span.development-programs-group__heading= heading
+    +development-programs-list({items: items})
