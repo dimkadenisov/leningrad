@@ -1,16 +1,22 @@
 .contact {
 	display: flex;
 	flex-direction: column;
-
-	&__for {
-		margin-bottom: 30px;
-	}
-
-	&__adress {
-		margin-bottom: 15px;
-	}
+	flex-basis: 50%;
 
 	&__link {
+		align-self: flex-start;
 		margin-bottom: 15px;
+
+		&:first-of-type {
+			margin-top: 5px;
+		}
+	}
+}
+
+div.contact > p {
+	margin-bottom: 0;
+
+	&:first-child {
+		margin-bottom: 30px;
 	}
 }

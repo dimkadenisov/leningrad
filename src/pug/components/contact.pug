@@ -2,11 +2,12 @@ mixin contact(props = {})
   include icon-link
   include text-block
 
-  - const { forWhom, adress, phone, mail } = props;
+  - const { forWhom, name, adress, phone, mail } = props;
 
   .contact&attributes(attributes)
-    +text-block({text: forWhom})(class="text-block_color_white contact__for")
-    +text-block({text: adress})(class="text-block_color_white contact__adress")
+    p= forWhom
+    p= name
+    p= adress
     +icon-link({
       iconId: 'phone',
       href: phone.href,
