@@ -1,0 +1,8 @@
+mixin print-block(props = {})
+  include button
+
+  .print-block&attributes(attributes)
+    +button({
+      iconId: 'print',
+      text: 'Распечатать'
+    })(type="button" onclick="window.print();")

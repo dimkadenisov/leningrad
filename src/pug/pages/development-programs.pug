@@ -1,6 +1,7 @@
 extends ../components/page
 include ../components/development-programs-block
 include ../components/button
+include ../components/print-block
 
 
 block head
@@ -29,7 +30,4 @@ block content
           Инвестиционная программа ООО «Лемэк» по реконструкции наружных сетей и котельной в поселке Новоселье на долгосрочный перспективный период 2015-2022 годов
         p.
           Инвестиционная программа АО «Коммунальные системы Гатчинского района» Гатчинского муниципального района на период 2013-2022 годов
-    +button({
-      iconId: 'print',
-      text: 'Распечатать'
-    })
+    +print-block
