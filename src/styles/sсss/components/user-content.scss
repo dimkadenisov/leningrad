@@ -52,9 +52,18 @@
 		}
 	}
 
-	.list {
+	.list-with-icons {
 		li::before {
 			display: none;
+		}
+
+		svg {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 13px;
+			color: var(--primary);
+			vertical-align: middle;
 		}
 	}
 

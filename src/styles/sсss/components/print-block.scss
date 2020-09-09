@@ -1,12 +1,13 @@
 .print-block {
 	display: flex;
 	justify-content: center;
-	margin-top: 45px;
+	margin-top: 60px;
 	margin-bottom: 190px;
 }
 
 @media (max-width: 699px) {
 	.print-block {
+		margin-top: 40px;
 		margin-bottom: 90px;
 	}
 }
