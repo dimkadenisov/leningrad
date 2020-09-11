@@ -2,5 +2,5 @@ mixin language(props = {})
 
   - const { lang = 'ru' } = props;
 
-  .language&attributes(attributes)
+  a(href="#").language&attributes(attributes)
     span.language__text= lang
