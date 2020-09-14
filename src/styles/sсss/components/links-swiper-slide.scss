@@ -44,6 +44,13 @@
 		height: 21px;
 		margin-top: auto;
 	}
+
+	&:hover {
+		margin-top: 0;
+		padding-top: calc(var(--mt) + var(--pt));
+		background-color: var(--primary);
+		color: var(--white);
+	}
 }
 
 .swiper-slide-active {

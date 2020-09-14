@@ -1,10 +1,10 @@
 .links-swiper {
-	padding-top: 130px;
+	padding-top: 88px;
 	background-color: var(--gray-800);
 
 	&__inner {
 		&.swiper-container {
-			margin: 0 40px;
+			margin: 0 67px;
 		}
 	}
 
@@ -15,10 +15,17 @@
 	.swiper-button-prev,
 	.swiper-button-next {
 		top: 55%;
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
 		color: var(--white);
 
 		&::after {
 			font-size: 20px;
+		}
+
+		&:hover {
+			background-color: var(--gray-700);
 		}
 	}
 
@@ -33,6 +40,6 @@
 
 @media (max-width: 999px) {
 	.links-swiper {
-		padding-top: 90px;
+		padding-top: 60px;
 	}
 }

@@ -9,7 +9,6 @@
 	border-radius: 10px;
 	color: var(--white);
 	font-size: 20px;
-	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
@@ -25,6 +24,7 @@
 	&:hover,
 	&:focus {
 		background-color: var(--hover);
+		outline: none;
 	}
 
 	&:active {

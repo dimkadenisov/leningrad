@@ -9,3 +9,23 @@
 		}
 	}
 }
+
+@media (max-width: 999px) {
+	.user-menu {
+		&__item {
+			&:nth-last-child(n + 2) {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.user-menu {
+		&__item {
+			&:nth-last-child(n + 2) {
+				margin-right: 8px;
+			}
+		}
+	}
+}

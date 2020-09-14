@@ -1,5 +1,5 @@
 .place-production {
-	padding-top: 140px;
+	padding-top: 84px;
 	background-color: var(--gray-800);
 
 	&__inner {
@@ -18,7 +18,7 @@
 
 @media (max-width: 999px) {
 	.place-production {
-		padding-top: 100px;
+		padding-top: 60px;
 
 		&__inner {
 			padding: 45px 40px 35px;

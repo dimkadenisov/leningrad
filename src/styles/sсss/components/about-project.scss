@@ -1,5 +1,5 @@
 .about-project {
-	padding-top: 184px;
+	padding-top: 78px;
 	background-color: var(--gray-800);
 	overflow: auto;
 
@@ -13,12 +13,12 @@
 	}
 
 	.link {
-		margin: 20px auto 0;
+		margin: 0 auto;
 	}
 }
 
 @media (max-width: 999px) {
 	.about-project {
-		padding-top: 110px;
+		padding-top: 60px;
 	}
 }

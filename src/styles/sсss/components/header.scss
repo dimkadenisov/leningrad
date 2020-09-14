@@ -18,6 +18,14 @@
 	}
 }
 
+@media (max-width: 999px) {
+	.header {
+		&__inner {
+			column-gap: 20px;
+		}
+	}
+}
+
 @media (max-width: 699px) {
 	.header {
 		&__inner {
