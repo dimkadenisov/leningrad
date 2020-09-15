@@ -5,10 +5,12 @@
 	border: none;
 	color: var(--white);
 	text-decoration: none;
+	cursor: pointer;
 
 	&:hover,
 	&:focus {
 		text-decoration: underline;
+		outline: none;
 	}
 
 	&_color {

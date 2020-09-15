@@ -43,3 +43,17 @@
 		padding-top: 60px;
 	}
 }
+
+@media (max-width: 699px) {
+	.links-swiper {
+		&__inner {
+			&.swiper-container {
+				margin: 0;
+			}
+		}
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+	}
+}
