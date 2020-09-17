@@ -1,18 +1,18 @@
 .advantage {
-  display: flex;
+	display: flex;
 
-  &__icon {
-    flex-shrink: 0;
-    width: 74px;
-    height: 74px;
-    margin-right: 34px;
-    padding: 20px;
-    background-color: var(--white);
-    border-radius: 50%;
-    color: var(--primary);
-  }
+	&__icon {
+		flex-shrink: 0;
+		width: 74px;
+		height: 74px;
+		margin-right: 13px;
+		padding: 20px;
+		background-color: var(--white);
+		border-radius: 50%;
+		color: var(--primary);
+	}
 
-  &__text {
-    padding-top: 12px;
-  }
+	&__text {
+		padding-top: 12px;
+	}
 }
