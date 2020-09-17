@@ -71,3 +71,9 @@
 		color: var((--white));
 	}
 }
+
+@media print {
+	.user-content {
+		max-width: 100%;
+	}
+}

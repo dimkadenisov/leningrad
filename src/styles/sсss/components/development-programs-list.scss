@@ -14,3 +14,13 @@
 		}
 	}
 }
+
+@media print {
+	.development-programs-list {
+		&__item {
+			.text-block {
+				max-width: 100%;
+			}
+		}
+	}
+}
