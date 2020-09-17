@@ -1,5 +1,5 @@
 .links-swiper {
-	padding-top: 88px;
+	padding-top: 94px;
 	background-color: var(--gray-800);
 
 	&__inner {
@@ -26,6 +26,10 @@
 
 		&:hover {
 			background-color: var(--gray-700);
+		}
+
+		&:focus {
+			outline: none;
 		}
 	}
 
