@@ -1,0 +1,16 @@
+mixin banner(props = {})
+  include heading
+  include button
+
+  section.banner&attributes(attributes)
+    .container
+      article.banner__inner(style="background-image: url(assets/img/banner.jpg)")
+        .banner__text
+          +heading({level: 2, tag: 'h2', text: 'Пространственный раздел<br/>стратегии'})
+          span Развивающиеся и планируемые проекты
+            |
+            |
+            br
+            |
+            |на территории региона
+          +button({tag: 'a', text: 'Узнать подробнее'})(href="#")
